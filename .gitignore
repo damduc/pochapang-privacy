@@ -1,0 +1,67 @@
+# 포차팡 사이트 (pochapang.bycode.kr) — GitHub Pages 정적 저장소
+#
+# 이 저장소는 GitHub Pages가 그대로 서빙한다. 빌드 단계가 없으므로
+# 루트에 있는 파일이 곧 공개되는 파일이다.
+#
+# ⚠️ 아래 네 개는 반드시 커밋되어야 한다 — 실수로 이 파일에 추가하지 말 것:
+#     CNAME            커스텀 도메인 지정 (없으면 pochapang.bycode.kr이 안 붙는다)
+#     .nojekyll        Jekyll 처리 건너뛰기 (없으면 예상 밖 파일이 빠질 수 있다)
+#     app-ads.txt      광고 사기 방지 파일 (AdMob이 크롤링한다)
+#     index.html       개인정보처리방침 (스토어·AdMob에 등록된 URL)
+
+# ── macOS ──────────────────────────────────────────────
+# T5 외장 SSD(HFS+)에서 특히 자주 생긴다. Finder로 폴더를 한 번 열면 .DS_Store가 붙는다.
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# ── Windows ────────────────────────────────────────────
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ── 에디터 ─────────────────────────────────────────────
+.vscode/
+.idea/
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# ── Jekyll (지금은 .nojekyll로 껐지만, 로컬에서 돌려볼 경우 대비) ──
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+Gemfile.lock
+vendor/
+
+# ── 작업 중 임시물 ─────────────────────────────────────
+*.log
+*.bak
+*.orig
+*.tmp
+tmp/
+draft/
+_wip/
+
+# ── 비밀값 (이 저장소는 공개다 — 어떤 키도 들어오면 안 된다) ──
+.env
+.env.*
+*.pem
+*.key
+*.p8
+*.p12
+*.keystore
+*.jks
+secrets.*
